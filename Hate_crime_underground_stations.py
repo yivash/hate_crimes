@@ -75,7 +75,7 @@ for element in mydata:
         metro_stations[data["name"]]=0
 for dot in crime_locs:
     far=10000
-    closest_line=None
+    closest_station=None
     for element in mydata:
         for data in element["stations"]:
             new_dist=distance_with_precision(4,(dot),(float(data["lat"]),float(data["lng"])))
